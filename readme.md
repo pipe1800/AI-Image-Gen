@@ -38,16 +38,19 @@ API Credentials: For ease of setup and testing, the necessary API keys have been
 Video Generation (Mock Mode): The Pollo.ai video generation worker is currently set to POLLO_MOCK_MODE=True in the .env file to avoid incurring costs during testing, however the API communicatio is fully implemented. (Although not tested on a production env).
 
 Local Setup and Installation
-To run this project, you only need Docker Desktop installed. The setup is cross-platform and works on Windows, macOS, and Linux.
+To run this project, you only need Docker Desktop installed. The setup is cross-platform and works on Windows, macOS, and Linux. Make sure to have Docker installed, if not you can download it using this link: https://www.docker.com/products/docker-desktop/
 
-1. Run the Application
+1. Configure Environment
+In the project's root directory, rename the file env.example to .env.
+
+2. Run the Application
 Open a terminal in the project's root directory and run the following command:
 
 docker-compose up --build
 
 This command will build the container images and start all the services. The initial build may take a minute.
 
-2. Access the UI
+3. Access the UI
 Once the services are running, open a web browser and navigate to:
 
 http://localhost:8080

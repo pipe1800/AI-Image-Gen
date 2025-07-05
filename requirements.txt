@@ -1,0 +1,5 @@
+pika
+supabase
+python-dotenv
+requests
+fastapi[all]
